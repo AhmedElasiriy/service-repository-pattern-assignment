@@ -4,7 +4,7 @@ import Database, { UserRequestDto, IUser } from './Database'
 export class UserRepository {
   public readonly db = Database
 
-  createUser(userName: UserRequestDto) {
-    return this.db.create(userName)
+  createUser(userData: UserRequestDto) {
+    return this.db.create(userData)
   }
 }
